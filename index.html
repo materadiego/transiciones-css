@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Transiciones</title>
+    <style>
+        body{
+/*            background: #0ad;*/
+            background: #222
+            
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: 100vh
+            
+        }
+        .canasta{
+            display: grid;
+            width: 70%;
+            margin: 0vh auto 10vh auto;
+            justify-items: center;
+             align-items: center;
+            
+                    
+        }
+         .canasta2{
+            display: grid;
+            width: 70%;
+            margin: 0vh auto 10vh auto;
+            justify-items: center;
+             align-items: center;
+            
+        }
+         .canasta3{
+            display: grid;
+            width: 70%;
+            margin: 0vh auto 10vh auto;
+            justify-items: center;
+              align-items: center;
+        }
+        .pelota{
+            margin-top: 1em;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: blueviolet;
+            border-bottom: 2px solid #60A;
+            border-top: 0px solid blue;
+            border-left: 0px solid blue;
+            border-right: 2px solid #608;
+            box-shadow: 130px 120px 40px -40px rgba(255, 255, 255, 0.2);
+            transition-property: width, height;
+            transition: 700ms;
+            transition-delay: 00ms;
+            transition-timing-function: ease;
+            
+        }
+         .pelota2{
+            margin-top: 1em;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: darkmagenta;
+            border-bottom: 3px solid #707;
+            border-top: 0px solid blueviolet;
+            border-left: 2px solid #707;
+            border-right: 2px solid #707;
+            box-shadow: 0px 120px 40px -40px rgba(255, 255, 255, 0.2);
+            transition-property: width, height;
+            transition: 700ms;
+            transition-delay: 00ms;
+            transition-timing-function: ease;
+            
+        }
+         .pelota3{
+            margin-top: 1em;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: royalblue;
+            border-bottom: 2px solid #308;
+            border-top: 0px solid darkblue;
+            border-right: 1px solid #308;
+            border-left: 2px solid #308;
+            box-shadow: -130px 120px 40px -40px rgba(255, 255, 255, 0.2);
+            transition-property: width, height;
+            transition: 700ms;
+            transition-delay: 00ms;
+            transition-timing-function: ease;
+            
+        }
+        .pelota:hover{
+            width: 350px;
+            height: 330px;
+             box-shadow: 10px 10px 10px 0px rgba(255, 255, 255, 0.2);
+        }
+        .pelota2:hover{
+            width: 350px;
+            height: 330px;
+             box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.2);
+        }
+         .pelota3:hover{
+            width: 350px;
+            height: 330px;
+             box-shadow: -10px 10px 10px 0px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+   <div class="canasta">
+    <div class="pelota"></div>
+        <div class="pelota"></div>
+    </div>
+     <div class="canasta2">
+    <div class="pelota2"></div>
+        <div class="pelota2"></div>
+    </div>
+     <div class="canasta3">
+    <div class="pelota3"></div>
+        <div class="pelota3"></div>
+    </div>
+    </div>
+</body>
+</html>
